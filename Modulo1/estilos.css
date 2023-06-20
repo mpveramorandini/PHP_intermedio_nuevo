@@ -1,0 +1,229 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+.encabezado{
+   padding-top: 20px;
+    background-color: rgb(88, 207, 218);
+    /* display: flex;
+    flex-direction:column; */
+}
+
+.encabezado h1 {
+    padding-top: 20px;
+}
+.encabezado h1,
+h2 {
+    color: whitesmoke;
+    font-weight: 100;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.menu_principal{
+    background-color: #2e64a1;
+    margin: 0;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li {
+    flex-grow: 1;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*formulario cargar alumno*/
+.contacto{
+max-width: 960px;
+ margin: 0 auto;
+ margin-bottom: 30px;
+}
+.contacto h2{
+    color:#8a8787;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.formulario{
+    padding:10px; 
+    width: 40%;
+    border: #8a8787 1px solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color:rgb(88, 207, 218) ;
+   
+}
+.formulario p{
+    margin-right: 0;
+}
+  .formulario p label{
+    min-width:80px;/*espacio minimo que ocupa el label*/
+    display:flex; /*caja contenedora*/
+    align-items:center; /*para que quede la etiqueta en el medio de la caja*/
+}  
+
+.formulario p input, 
+.formulario p textarea{
+    width: 95%;
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #8a8787;
+    font-size: 14px;
+    padding: 6px 10px;
+   
+}
+
+.formulario p:nth-child(4){
+    align-items:start; /*cambia la posicion del 4to p*/
+}
+.formulario textarea{
+    resize:none;/*deja fijo el tamaño del area*/
+    height:150px;
+    
+} 
+
+.formulario input[type="submit"]{
+    background: #2e64a1;
+    box-shadow: 0 0 10px rgba(0 ,0,0, 0.2);
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;/*ancho del boton*/
+    /*position: relative;/*posicion del boton*/
+    left: 5rem;/*alineacion*/
+    cursor: pointer; /*aparece la manito*/
+}
+.formulario input[type="submit"]:hover{
+    background-color: #509eec;;/*cambia de color cuando pasa la manito*/
+}
+
+
+
+/*ver alumno*/
+.contenedor_alumno{
+    color: #2e64a1;
+    display: flex;/*todos a lo largo*/
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+ 
+
+.caja_alumnos{
+   width: 50%;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   padding: 16px;
+   margin: 16px 0;
+   align-items: center;
+   width: 18%;
+   text-align: center;
+   padding: 13px;
+   box-sizing: border-box;
+    }
+.caja_alumnos img{
+    width: 100%; /*porcentaje sobre el 100% del ancho*/
+    border: 1px solid #ddd; /* siempre grosor tipo y color*/
+    max-width: 225px;
+    border-radius: 5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.caja_alumnos h3{
+    color: #2e64a1;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 10px;
+}
+.caja_alumnos p{
+    font-size: 13px;
+}
+.eliminar{
+    background: #2e64a1;
+    box-shadow: 0 0 5px rgba(0 ,0,0, 0.2);
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 6px 10px;
+    left: 5rem;/*alineacion*/
+    cursor: pointer; /*aparece la manito*/
+}
+.eliminar[type="submit"]:hover{
+    background-color: #509eec;;/*cambia de color cuando pasa la manito*/
+}
+/*formulario comentarios*/
+.comentarios{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.comentarios h2{
+    color:#2e64a1;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.foter{
+    background-color:#ccc;
+    color: #2e64a1;
+    text-transform: uppercase;
+    display: block;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1px;
+    padding-top: 1px;
+ }
+ .foter h4{
+    text-align: center;
+ }
+ /*ver comentario*/
+.coment{
+    font-style: italic;
+    color: #2e64a1;
+    font-weight: 100;
+}
+.coment h5{
+    border-bottom: 1px solid #2e64a1;
+    background-color: aquamarine;
+}
+.comentario{
+    color:#2e64a1;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+@media screen and (min-width:100px) and (max-width :900px) {
+header{
+    width: 100%;
+}
+.caja_alumnos{
+    width: 100%;
+}
+.contacto{
+    width: 100%;
+}
+.formulario{
+    width: 80%;
+}
+}
