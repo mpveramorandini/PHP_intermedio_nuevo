@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2023 a las 17:23:42
+-- Tiempo de generación: 21-06-2023 a las 14:15:31
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -64,18 +64,17 @@ INSERT INTO `alumnos` (`id`, `nombre`, `apellido`, `imagen`, `descripcion`, `est
 (30, 'Alumno', 'Dos', 0x616c756d6e6f322e6a7067, 'comentario dos', 'proceso'),
 (39, 'Alumno', 'Diez', 0x616c756d6e6f332e6a7067, 'comentario 10', 'proceso'),
 (55, 'alumno5', 'cinco', 0x616c756d6e6f352e6a7067, 'comentario cinco', 'finalizado'),
-(56, 'alumno6', 'seis', 0x616c756d6e6f362e6a7067, 'comentario seis', 'finalizado'),
 (57, 'alumno3', 'tres', 0x616c756d6e6f332e6a7067, 'comentario tres', 'finalizado'),
 (89, 'alumno1', 'uno', 0x616c756d6e6f312e6a7067, 'comentario uno', 'finalizado'),
 (91, 'alumno4', 'cuatro', 0x616c756d6e6f342e6a7067, 'comentario cuatro', 'finalizado'),
 (92, 'alumno7', 'siete', 0x616c756d6e6f372e6a7067, 'comentario siete', 'finalizado'),
 (93, 'alumno6', 'seis', 0x616c756d6e6f362e6a7067, 'comentario seis', 'finalizado'),
-(94, 'alumno2', 'dos', 0x616c756d6e6f322e6a7067, 'comentario dos', 'proceso'),
-(95, 'alumno8', 'ocho', 0x616c756d6e6f352e6a7067, 'comentario ocho', 'finalizado'),
 (96, 'alumno1', 'uno', 0x616c756d6e6f312e6a7067, 'comentario uno', 'proceso'),
 (103, 'alumno9', 'nueve', 0x616c756d6e6f352e6a7067, 'comentario nueve', 'proceso'),
 (104, 'alumno 10', 'diez', 0x616c756d6e6f372e6a7067, 'comentario diez', 'proceso'),
-(106, 'alumno dos', 'dos', 0x616c756d6e6f322e6a7067, 'comentario dos', 'proceso');
+(107, 'alumno2', 'dos', 0x616c756d6e6f322e6a7067, 'comentario dos', 'finalizado'),
+(108, 'alumno3', 'tres', 0x616c756d6e6f332e6a7067, 'comentario tres', 'finalizado'),
+(109, 'alumno5', 'cinco', 0x616c756d6e6f352e6a7067, 'comentario cinco', 'proceso');
 
 -- --------------------------------------------------------
 
@@ -133,7 +132,7 @@ ALTER TABLE `administradores`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

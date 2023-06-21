@@ -16,8 +16,9 @@
 <ul>
   <li><a href="cargar.php">Cargar Alumno</a></li>
   <li><a href="ver_alumno.php">Ver Alumno</a></li>
-  <li><a href="salir.php">Salir</a></li>
   <li><a href="finalizados.php">Finalizados</a></li>
+  <li><a href="salir.php">Salir</a></li>
+  
 </ul>
 </div>
 

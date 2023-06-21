@@ -10,7 +10,12 @@ body{
     /* display: flex;
     flex-direction:column; */
 }
-
+.encabezado ul li a:hover{
+    background-color: rgba(215, 211, 211, 0.797);
+}
+.encabezado ul li a.activo{
+    background-color: rgba(215, 211, 211, 0.797);
+}
 .encabezado h1 {
     padding-top: 20px;
 }
@@ -47,6 +52,23 @@ ul li a {
     display: block;
     text-align: center;
     text-transform: uppercase;
+}
+
+.encabezado ul li a:hover{
+    background-color: rgba(233, 230, 230, 0.797);
+}
+
+.contenido{
+    max-width: 800px;
+     margin: 0 auto;
+     margin-bottom: 30px;
+    }
+
+.contenido img{
+    width:100%;
+    padding:10px; 
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 /*formulario cargar alumno*/

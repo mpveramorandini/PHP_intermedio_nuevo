@@ -8,6 +8,7 @@ if ($codigo_captcha == $_SESSION['codigo_captcha']) {
     $apellido_alumno = $_POST["apellido"];
     // $imagen_alumno = $_POST["imagen"];
     $descripcion_alumno = $_POST["descripcion"];
+    
     $estado_alumno = $_POST["estado"];
 
 
@@ -22,7 +23,7 @@ if ($codigo_captcha == $_SESSION['codigo_captcha']) {
     $destino = 'imagenes/'. $nombre_img;
 
     if (($tipo_img != "image/jpeg" &&  $tipo_img != "image/jpg" &&  $tipo_img != "image/png" &&  $tipo_img != "image/gif") or $tamanio_img >400000) {
-        header("Location: cargar.php?error");
+        header("Location:cargar.php?error");
     } else {
         move_uploaded_file($tmp_img, $destino);
         mysqli_query($conexion_db, "INSERT INTO alumnos VALUES (DEFAULT,'$nombre_alumno','$apellido_alumno','$nombre_img', '$descripcion_alumno', '$estado_alumno')");

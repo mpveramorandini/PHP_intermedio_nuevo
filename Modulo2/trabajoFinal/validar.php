@@ -11,7 +11,7 @@ if (mysqli_num_rows($consulta) == 0) {
     header('Location:index.php?error');
 } else {
     $_SESSION['admin'] = $_POST['usuario'];
-    header('Location:cargar.php');
+    header('Location:mostrar_contenido.php');
 }
 
 
